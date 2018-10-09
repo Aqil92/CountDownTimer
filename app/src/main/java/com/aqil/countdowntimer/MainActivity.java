@@ -2,16 +2,12 @@ package com.aqil.countdowntimer;
 
 import android.app.Activity;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
-import android.widget.TextView;
 
 import com.aqil.timerlibrary.ProgressWheel;
-
-import java.util.logging.Logger;
 
 public class MainActivity extends Activity {
 
@@ -39,7 +35,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.count_timer);
 
         init();
         configureConferenceDate();
