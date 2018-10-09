@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <LinearLayout
+        android:id="@+id/activity_countdown_wheels_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fifteen_dp"
+        android:paddingRight="@dimen/fifteen_dp"
+        android:paddingTop="@dimen/twenty_dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <com.aqil.timerlibrary.ProgressWheel
+            android:id="@+id/activity_countdown_timer_days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ProgressWheel:textColor="@color/center_text"
+            android:tag="Thin"
+            ProgressWheel:textSize="@dimen/twenty_four_sp"
+            ProgressWheel:rimColor="@color/rim_color_gray"
+            ProgressWheel:barColor="@color/round_progress_blue"
+            ProgressWheel:barWidth="@dimen/six_dp"
+            ProgressWheel:rimWidth="@dimen/one_dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <com.aqil.timerlibrary.ProgressWheel
+            android:id="@+id/activity_countdown_timer_hours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ProgressWheel:textColor="@color/center_text"
+            android:tag="Thin"
+            ProgressWheel:textSize="@dimen/twenty_four_sp"
+            ProgressWheel:rimColor="@color/rim_color_gray"
+            ProgressWheel:barColor="@color/round_progress_blue"
+            ProgressWheel:barWidth="@dimen/six_dp"
+            ProgressWheel:rimWidth="@dimen/one_dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <com.aqil.timerlibrary.ProgressWheel
+            android:id="@+id/activity_countdown_timer_minutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ProgressWheel:textColor="@color/center_text"
+            android:tag="Thin"
+            ProgressWheel:textSize="@dimen/twenty_four_sp"
+            ProgressWheel:rimColor="@color/rim_color_gray"
+            ProgressWheel:barColor="@color/round_progress_blue"
+            ProgressWheel:barWidth="@dimen/six_dp"
+            ProgressWheel:rimWidth="@dimen/one_dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <com.aqil.timerlibrary.ProgressWheel
+            android:id="@+id/activity_countdown_timer_seconds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ProgressWheel:textColor="@color/center_text"
+            android:tag="Thin"
+            ProgressWheel:textSize="@dimen/twenty_four_sp"
+            ProgressWheel:rimColor="@color/rim_color_gray"
+            ProgressWheel:barColor="@color/round_progress_blue"
+            ProgressWheel:barWidth="@dimen/six_dp"
+            ProgressWheel:rimWidth="@dimen/one_dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_countdown_labels_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fifteen_dp"
+        android:paddingRight="@dimen/fifteen_dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/activity_countdown_wheels_layout" >
+
+        <TextView
+            android:id="@+id/activity_countdown_timer_days_text"
+            android:textColor="@color/rim_color_gray"
+            android:tag="Thin"
+            android:textSize="@dimen/twenty_sp"
+            android:text="Day's"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/activity_countdown_timer_hours_text"
+            android:textColor="@color/rim_color_gray"
+            android:tag="Thin"
+            android:textSize="@dimen/twenty_sp"
+            android:text="Hours"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/activity_countdown_timer_minutes_text"
+            android:textColor="@color/rim_color_gray"
+            android:tag="Thin"
+            android:textSize="@dimen/twenty_sp"
+            android:text="Minutes"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/activity_countdown_timer_seconds_text"
+            android:textColor="@color/rim_color_gray"
+            android:tag="Thin"
+            android:textSize="@dimen/twenty_sp"
+            android:text="second"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>
